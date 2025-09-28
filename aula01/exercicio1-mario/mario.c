@@ -6,9 +6,9 @@ int main(void)
     int height;
     do
     {
-        n = get_int("Altura: ");
+        height = get_int("Altura: ");
     }
-    while (n < 1 || n > 8);
+    while (height < 1 || height > 8);
 
     for (int i = 0; i < height; i++)
     {
@@ -19,10 +19,11 @@ int main(void)
         }
 
         //imprimir os hashes
-        for (int h = 0; h < height + i + 1; h++)
+        for (int h = 0; h < i + 1; h++)
         {
             printf("#");
         }
         printf("\n");
     }
+    return 0;
 }
