@@ -17,6 +17,12 @@ int main(void)
         {
             printf(" ");
         }
-        printf("#\n");
+
+        //imprimir os hashes
+        for (int h = 0; h < height + i + 1; h++)
+        {
+            printf("#");
+        }
+        printf("\n");
     }
 }
