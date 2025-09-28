@@ -1,5 +1,19 @@
-1 - Solicitar número inteiro ao usuário;
-2 - Repita a solicitação até o usuario digitar um inteiro entre 1 e 8;
-3 - Imprimir # com base no numero digitado pelo usuário com quebra de linha;
-3 - Imprimir # nas colunas
-4 - Substituir # por . 
+INÍCIO
+
+    REPETIR
+        pedir ao usuário um número inteiro
+    ENQUANTO (altura < 1 OU altura > 8)
+
+    PARA cada linha i de 0 até altura - 1 FAÇA
+        PARA cada espaço de 0 até (altura - i - 2) FAÇA
+            imprimir " "
+        FIM PARA
+
+        PARA cada hash de 0 até i FAÇA
+            imprimir "#"
+        FIM PARA
+
+        imprimir nova linha
+    FIM PARA
+
+FIM
