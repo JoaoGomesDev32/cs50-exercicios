@@ -5,7 +5,7 @@ INÍCIO
     ENQUANTO (altura < 1 OU altura > 8)
 
     PARA cada linha i de 0 até altura - 1 FAÇA
-        PARA cada espaço de 0 até (altura - i - 2) FAÇA
+        PARA cada espaço de 0 até (altura - i - 1) FAÇA
             imprimir " "
         FIM PARA
 
