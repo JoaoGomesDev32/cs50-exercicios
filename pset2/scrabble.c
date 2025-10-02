@@ -20,3 +20,8 @@ int main(void)
         printf("Jogador 2 Ganhou!");
     }
 }
+
+int compute_score(string word)
+{
+    
+}
