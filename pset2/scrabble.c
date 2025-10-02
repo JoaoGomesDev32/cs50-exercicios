@@ -9,19 +9,40 @@ int compute_score(string word);
 
 int main(void)
 {
-    string Jogador1 = get_string("Inserir palavara do jogador 1: ");
-    string Jogador2 = get_string("Inserir palavara do jogador 2: ");
+    string word1 = get_string("Player 1: ");
+    string word2 = get_string("Player 2: ");
 
-    if(Jogador1 > Jogador2)
+    // Calcula as pontuações
+    int score1 = compute_score(word1);
+    int score2 = compute_score(word2);
+
+    //decide o vencedor
+    if(score1 > score2)
     {
-        printf("Jogador 1 Ganhou!");
+        printf("Player 1 wins!\n");
+    } else if(score2 > score1)
+    {
+        printf("Player 2 wins!\n");
     } else
     {
-        printf("Jogador 2 Ganhou!");
+        printf("Tie!\n");
     }
 }
 
 int compute_score(string word)
 {
-    
+    int score = 0;
+
+    for (int i = 0; i < strlen(word); i++)
+    {
+        if(isalpha(word[i]))
+        {
+            //converte para maiuscula
+            char c = toupper(word[i]);
+            // posição da letra no alfabeto
+            int index = c - 'A';
+            score += POINTS[index];
+        }
+    }
+    return score
 }
