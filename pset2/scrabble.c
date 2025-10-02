@@ -44,5 +44,5 @@ int compute_score(string word)
             score += POINTS[index];
         }
     }
-    return score
+    return score;
 }
