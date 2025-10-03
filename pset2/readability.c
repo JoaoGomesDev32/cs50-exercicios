@@ -1,15 +1,15 @@
 #include <cs50.h>
-#include <stdio.h>
-#include <string.h>
 #include <ctype.h>
 #include <math.h>
+#include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
     string text = get_string("Text: ");
 
     int letters = 0;
-    int words = 1;   // começa em 1 porque o número de palavras = nº de espaços + 1
+    int words = 1; // começa em 1 porque o número de palavras = nº de espaços + 1
     int sentences = 0;
 
     // percorre cada caractere do texto
