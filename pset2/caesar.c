@@ -13,6 +13,16 @@ int main(int argc, string argv[])
         return 1;
     }
 
+    // Valida se todos os caracteres da chave são dígitos
+    for (int i = 0; i < strlen(argv[1]); i++)
+    {
+        if (!isdigit(argv[1][i]))
+        {
+            printf("Usage: ./caesar key\n");
+            return 1;
+        }
+    }
+
     // Converte o argumento para inteiro
     int key = atoi(argv[1]);
 
