@@ -1,0 +1,11 @@
+sort3 uses: selection sort
+How do you know?: It took nearly the same time regardless of input order, meaning it always scans the whole list to find the smallest element each time.
+
+sort2 uses: merge sort
+How do you know?: It was very fast on sorted lists but slow on reverse order, suggesting it shifts elements into position one by one.
+
+sort1 uses: bubble sort
+How do you know?: It became faster for nearly sorted lists and slower for reverse order, indicating it swaps adjacent elements repeatedly.
+
+
+
